@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<!--
+    hello! empty는 서버 없을 경우 표출 서버에서 동작 시 th:text 내용으로 치환되어서 표출
+    일반적으로 컨트롤러 로직을 타는 경우
+    mvc와 템플릿 엔진을 토해서 구동
+    컨트롤러에서의 값을 viewResolver(템플릿엔진연동)가 컨트롤러에 return값과 똑같은 html을 찾아 값을 변환해줘서 표시
+-->
+<p th:text="'hello ' + ${name}">hello! empty</p>
+</body>
+</html>
